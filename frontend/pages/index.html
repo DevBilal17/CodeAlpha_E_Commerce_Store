@@ -589,6 +589,39 @@
         <div class="section-head">
           <h2>New Arrival</h2>
         </div>
+        <div class="grid-container">
+          <div class="grid-box1 grid-box">
+            <!-- <img src="../assets/images/ps5.png" alt=""> -->
+              <div class="content">
+                <h5>PlayStation 5</h5>
+                <p>Black and White version of the PS5 coming out on sale.</p>
+                <a href="">Shop Now</a>
+              </div>         
+          </div>
+          <div class="grid-box2 grid-box">
+              <div class="content">
+                <h5>Women's Collections</h5>
+                <p>Featured woman Collections that  give you another vibe.</p>
+                <a href="">Shop Now</a>
+              </div>
+              <!-- <img src="../assets/images/ps5.png" alt=""> -->
+          </div>
+          <div class="grid-box3 grid-box">
+              <div class="content">
+                <h5>Speakers</h5>
+                <p>Amazon wireless speakers</p>
+                <a href="">Shop Now</a>
+              </div>         
+          </div>
+          <div class="grid-box4 grid-box">
+              <div class="content">
+                <h5>Perfume</h5>
+                <p>GUCCI INTENSE OUD EDP</p>
+                <a href="">Shop Now</a
+              </div>
+          
+          </div>
+        </div>
        </section>
     </main>
 
@@ -609,6 +642,14 @@
           itemImage.setAttribute("src", originalSrc);
         });
       });
+
+
+      var grid_boxes = document.querySelectorAll('#new_arrival .grid-container .grid-box');
+      grid_boxes[0].style.backgroundImage = `url('../assets/images/ps5.png')`;
+      grid_boxes[1].style.backgroundImage = `url('../assets/images/attractive-woman.png')`;
+      grid_boxes[2].style.backgroundImage = `url('../assets/images/speaker.png')`;
+      grid_boxes[3].style.backgroundImage = `url('../assets/images/gucci.png')`;
+      
     </script>
   </body>
 </html>
