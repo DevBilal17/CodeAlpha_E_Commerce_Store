@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Store</title>
     <link rel="stylesheet" href="../css/style.css" />
-
-  
   </head>
   <body>
     <header>
@@ -16,51 +14,601 @@
       </marquee>
       <nav>
         <div class="nav-logo">
-           <h3>E-Store</h3>
+          <h3>E-Store</h3>
         </div>
         <ul class="nav-links">
-            <li class="nav-link active"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="#">About</a></li>
-            <li class="nav-link"><a href="#">Contact</a></li>
-            <li class="nav-link"><a href="#">Sign Up</a></li>
+          <li class="nav-link active"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#">About</a></li>
+          <li class="nav-link"><a href="#">Contact</a></li>
+          <li class="nav-link"><a href="#">Sign Up</a></li>
         </ul>
         <div class="nav-last">
-            <div class="input">
-                <input type="text" placeholder="What are you looking for?">
-                <img src="../assets/icons/search-icon.svg" alt="">
+          <div class="input">
+            <input type="text" placeholder="What are you looking for?" />
+            <img src="../assets/icons/search-icon.svg" alt="" />
+          </div>
+          <div class="nav-icons">
+            <div class="wishlist">
+              <div class="count">1</div>
+              <img src="../assets/icons/heart-icon.svg" alt="" />
             </div>
-            <div class="nav-icons">
-                <div class="wishlist">
-                    <div class="count">1</div>
-                    <img src="../assets/icons/heart-icon.svg" alt="">
-                </div>
-                <div class="cart">
-                    <div class="count">3</div>
-                    <img src="../assets/icons/cart-icon.svg" alt="">
-                </div>
+            <div class="cart">
+              <div class="count">3</div>
+              <img src="../assets/icons/cart-icon.svg" alt="" />
             </div>
+          </div>
         </div>
       </nav>
     </header>
-    <div class="horizontal-divider"></div>
+    <!-- <div class="horizontal-divider"></div> -->
     <main>
-        <section id="banner">
-          <ul class="left">
-            <li><a href="">Women Fashion</a></li>
-            <li><a href="">Men Fashion</a></li>
-            <li><a href="">Electronics</a></li>
-            <li><a href="">Home & Lifestyle</a></li>
-            <li><a href="">Medicine</a></li>
-            <li><a href="">Sports & Outdoor</a></li>
-            <li><a href="">Baby's & Toys</a></li>
-            <li><a href="">Groceries & Pets</a></li>
-            <li><a href="">Health & Beauty</a></li>
-          </ul>
-          <div class="divider"></div>
-          <div class="right">
-            <img src="" alt="">
+      <section id="banner">
+        <ul class="left">
+          <li><a href="">Women Fashion</a></li>
+          <li><a href="">Men Fashion</a></li>
+          <li><a href="">Electronics</a></li>
+          <li><a href="">Home & Lifestyle</a></li>
+          <li><a href="">Medicine</a></li>
+          <li><a href="">Sports & Outdoor</a></li>
+          <li><a href="">Baby's & Toys</a></li>
+          <li><a href="">Groceries & Pets</a></li>
+          <li><a href="">Health & Beauty</a></li>
+        </ul>
+        <div class="divider"></div>
+        <div class="right">
+          <div class="banner"></div>
+        </div>
+      </section>
+
+      <!-- Todays Sale Section -->
+
+      <section id="todays-sales">
+        <h4>Today's</h4>
+        <div class="sales-head">
+          <h2>Flash Sales</h2>
+          <div class="countdown">
+            <div class="days">
+              <span>Days</span>
+              03
+            </div>
+            <span>:</span>
+            <div class="hours">
+              <span>Hours</span>
+              23
+            </div>
+            <span>:</span>
+            <div class="minutes">
+              <span>Minutes</span>
+              19
+            </div>
+            <span>:</span>
+            <div class="seconds">
+              <span>Seconds</span>
+              56
+            </div>
           </div>
-        </section>
+        </div>
+        <div class="sales-products">
+          <div class="products">
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="view_all_btn_div">
+            <button>View All Products</button>
+          </div>
+        </div>
+        <div class="horizontal-divider"></div>
+      </section>
+
+      <!-- Category Section -->
+      <section id="category">
+        <h4>Categories</h4>
+        <div class="category-head">
+          <h2>Browse By Category</h2>
+        </div>
+        <div class="category-container">
+          <div class="category-box">
+            <img src="../assets/icons/categories/smartphone.png" alt="" />
+            <h5>Phones</h5>
+          </div>
+
+          <div class="category-box">
+            <img src="../assets/icons/categories/monitor.png" alt="" />
+            <h5>Computers</h5>
+          </div>
+
+          <div class="category-box">
+            <img src="../assets/icons/categories/smartwatch.png" alt="" />
+            <h5>Smart Watches</h5>
+          </div>
+
+          <div class="category-box">
+            <img src="../assets/icons/categories/camera.png" alt="" />
+            <h5>Camera</h5>
+          </div>
+
+          <div class="category-box">
+            <img src="../assets/icons/categories/headphones.png" alt="" />
+            <h5>Headphones</h5>
+          </div>
+
+          <div class="category-box">
+            <img src="../assets/icons/categories/console.png" alt="" />
+            <h5>Gaming</h5>
+          </div>
+
+          <!-- <div class="category-box">
+            <img src="" alt="" />
+            <h5>Phones</h5>
+          </div> -->
+        </div>
+        <div class="horizontal-divider"></div>
+      </section>
+
+      <!-- This Month Sellings -->
+      <section id="month_Sellings">
+        <h4>This Month</h4>
+
+        <div class="month-sales-head">
+          <h2>Best Selling Products</h2>
+          <div class="view_all_btn_div">
+            <button>View All Products</button>
+          </div>
+        </div>
+        <div class="month-sales-products">
+          <div class="products">
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lower Banner -->
+      <section id="lower_banner">
+        <div class="banner">
+          <div class="left">
+            <h4>Categories</h4>
+            <h3>Enhance Your Music Experience</h3>
+            <div class="btn">
+              <button>View All Categories</button>
+            </div>
+          </div>
+          <div class="right">
+            <img src="../assets/images/JBL_BOOMBOX.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Products -->
+
+      <section id="our_products">
+        <h4>Our Products</h4>
+
+        <div class="month-sales-head">
+          <h2>Explore Our Products</h2>
+        </div>
+        <div class="explore-our-products">
+          <div class="products">
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+            <div class="product">
+              <div class="top">
+                <div class="off">- 40%</div>
+                <img src="../assets/images/iphone-15-pink.png" alt="" />
+                <div class="wishlist">
+                  <img src="../assets/icons/heart-icon.svg" alt="" />
+                </div>
+
+                <button class="add-to-cart-btn">Add To Cart</button>
+              </div>
+              <div class="bottom">
+                <h5 class="product_name">HAVIT HV-G92 Gamepad</h5>
+                <div class="prices">
+                  <span class="after"> $120 </span>
+                  <span class="before"> $160 </span>
+                </div>
+                <!-- <div class="ratings">
+
+                </div> -->
+              </div>
+            </div>
+            
+          </div>
+          <div class="view_all_btn_div">
+              <button>View All Products</button>
+            </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- Featured / New Arrivals -->
+       <section id="new_arrival">
+        <h4>Featured</h4>
+        <div class="section-head">
+          <h2>New Arrival</h2>
+        </div>
+       </section>
     </main>
+
+    <script>
+      const categoriesBox = document.querySelectorAll(
+        ".category-container .category-box"
+      );
+
+      categoriesBox.forEach((item) => {
+        const itemImage = item.querySelector("img");
+        let originalSrc = itemImage.getAttribute("src");
+        let replacing = originalSrc.replace(/(\.[a-zA-Z]+)$/, "_white$1");
+        item.addEventListener("mouseenter", function () {
+          itemImage.setAttribute("src", replacing);
+        });
+
+        item.addEventListener("mouseleave", function () {
+          itemImage.setAttribute("src", originalSrc);
+        });
+      });
+    </script>
   </body>
 </html>
