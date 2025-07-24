@@ -603,7 +603,7 @@ section > h4::before {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 40px;
+  padding: 20px;
 }
 
 #new_arrival .grid-container .grid-box .content{
