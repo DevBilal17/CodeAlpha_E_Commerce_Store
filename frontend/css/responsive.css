@@ -27,4 +27,61 @@
   nav .nav-links.active {
     transform: translateX(0%);
   }
+
+
+
+  /* Lower Banner */
+  #lower_banner .banner{
+    padding: 40px 30px;
+    gap: 8px;
+  }
+
+  #lower_banner .banner .left h3{
+    font-size: 40px;
+  }
+  #lower_banner .banner .left{
+    width: 50%;
+  }
+  #lower_banner .banner .right{
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width:776px){
+  #lower_banner .banner{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 40px 35px;
+  }
+   #lower_banner .banner .left h3{
+    font-size: 32px;
+    /* position: absolute; */
+  }
+  #lower_banner .banner .left h4{
+    position: absolute;
+    top: 30px;
+  }
+  #lower_banner .banner .left{
+    width: 100%;
+    order: 2;
+    margin-top: 30px;
+  }
+  #lower_banner .banner .right{
+    width: 100%;
+    order: 1;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width:550px){
+    #lower_banner .banner .left h3{
+    font-size: 26px;
+    /* position: absolute; */
+  }
+
+  #lower_banner .banner .btn button{
+    width: 150px;
+  }
 }
