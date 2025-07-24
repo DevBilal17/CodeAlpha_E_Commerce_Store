@@ -703,3 +703,68 @@ section > h4::before {
   background-color: #000;
   z-index: -1;
 } */
+
+
+
+
+/* Footer CSS */
+
+footer{
+  padding: 40px 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer .container>div:nth-child(1) h4{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .container>div:nth-child(1) h5{
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+footer .container>div:nth-child(1) p{
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+footer .container>div:not(:nth-child(1)) h4{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+footer .container>div:not(:nth-child(1)) ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+  list-style-type: none;
+}
+
+footer .container>div:not(:nth-child(1)) ul li{
+}
+
+footer .container>div:not(:nth-child(1)) ul li a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+footer .container>div:not(:nth-child(1)) ul li a:hover{
+  /* transform: translateX(-2px); */
+  border-bottom: 2px solid #00ff66;
+}
+
+
