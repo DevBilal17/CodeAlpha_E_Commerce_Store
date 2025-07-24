@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Store</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css">
   </head>
   <body>
     <header>
@@ -13,10 +14,16 @@
         <a href="#">ShopNow</a>
       </marquee>
       <nav>
+        <div class="n">
+          <div class="nav-btn">
+          <button>show</button>
+        </div>
         <div class="nav-logo">
+          
           <h3>E-Store</h3>
         </div>
-        <ul class="nav-links">
+        </div>
+        <ul class="nav-links ">
           <li class="nav-link active"><a href="#">Home</a></li>
           <li class="nav-link"><a href="#">About</a></li>
           <li class="nav-link"><a href="#">Contact</a></li>
@@ -723,6 +730,23 @@
       grid_boxes[2].style.backgroundImage = `url('../assets/images/speaker.png')`;
       grid_boxes[3].style.backgroundImage = `url('../assets/images/gucci.png')`;
       
+
+
+      var nav_btn = document.querySelector('.nav-btn');
+      var nav_links = document.querySelector('nav .nav-links')
+      nav_btn.addEventListener('click',function(){
+         nav_links.classList.toggle('active')
+
+         if(nav_btn.innerHTML == 'show'){
+          nav_btn.innerHTML = 'Hide'
+         }
+         
+         if(nav_btn.innerHTML == 'Hide'){
+          nav_btn.innerHTML = 'show'
+         }
+      })
+
+
     </script>
   </body>
 </html>

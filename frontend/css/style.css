@@ -17,6 +17,10 @@
   --hover-parrot-green : #00d656;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 
 
 header marquee {
@@ -42,11 +46,21 @@ header nav {
   left: 0;
 }
 
+.n{
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+.nav-btn{
+  display: none;
+}
 header .nav-logo h3 {
   font-size: 25px;
 }
 nav {
   border-bottom: 1px solid var(--divider-gray) ;
+  z-index: 999;
 }
 nav ul {
   display: flex;
