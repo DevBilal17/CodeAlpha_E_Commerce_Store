@@ -732,13 +732,17 @@ footer{
 }
 
 footer .container{
-  padding: 40px 40px;
+  padding: 40px 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
 }
 
+ footer .container>div{
+  justify-self: flex-start;
+  align-self: flex-start;
+ }
 footer .container>div:nth-child(1) h4{
   font-size: 20px;
   font-weight: 600;

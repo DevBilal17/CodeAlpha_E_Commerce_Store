@@ -103,6 +103,16 @@ section:not(#banner){
     #new_arrival .grid-container .grid-box1{
       height: 450px;
     }
+
+
+
+}
+
+@media screen and (max-width:660px){
+  footer .container{
+    flex-direction: column;
+    padding: 40px;
+  }
 }
 
 @media screen and (max-width:550px){
@@ -128,6 +138,8 @@ section:not(#banner){
     font-size: 13px;
   }
 
+   
+
 }
 
 
@@ -137,5 +149,8 @@ section:not(#banner){
    }
    #new_arrival .grid-container .grid-box .content{
     bottom: 20px;
+   }
+   footer .container{
+    padding: 40px 20px;
    }
 }
