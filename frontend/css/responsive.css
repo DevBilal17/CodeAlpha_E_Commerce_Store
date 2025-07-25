@@ -146,6 +146,46 @@ header marquee{
     nav .nav-last .input{
       display: none;
     }
+
+
+.sales-head{
+  /* flex-direction: column; */
+}
+
+
+
+
+.sales-head,.month-sales-head,.section-head ,.category-head{
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.sales-head .countdown {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  margin-left: 0;
+  align-items: center;
+}
+
+.sales-head .countdown > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sales-head .countdown > div > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
   footer .container{
     flex-direction: column;
     padding: 40px;
@@ -181,6 +221,13 @@ header marquee{
 
 
 @media screen and (max-width:450px){
+.sales-head,.month-sales-head,.section-head,.category-head {
+  margin-top: 20px;
+  font-size: 18px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
    #new_arrival .grid-container .grid-box1{
     height: 300px;
    }
