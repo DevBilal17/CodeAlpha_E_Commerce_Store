@@ -17,9 +17,18 @@
 .nav-btn{
     display: block;
 }
+.nav-btn button{
+  /* padding: 2px; */
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.nav-btn img{
+  width: 32px;
+}
   header .nav-logo h3 {
   font-size: 25px;
-  /* margin-left: -120px; */
+  margin-left: 5px;
 }
   nav .nav-links li {
     width: fit-content;
@@ -120,7 +129,9 @@ section:not(#banner){
       height: 450px;
     }
 
-
+header marquee{
+  font-size: 11px;
+}
 
 }
 

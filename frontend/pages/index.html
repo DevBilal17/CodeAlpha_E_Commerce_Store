@@ -16,7 +16,7 @@
       <nav>
         <div class="n">
           <div class="nav-btn">
-          <button>show</button>
+          <button><img src="../assets/icons/menu.png" alt=""></button>
         </div>
         <div class="nav-logo">
           
@@ -732,18 +732,20 @@
       
 
 
-      var nav_btn = document.querySelector('.nav-btn');
+      var nav_btn = document.querySelector('.nav-btn button');
+      var nav_btn_image = nav_btn.querySelector('img')
       var nav_links = document.querySelector('nav .nav-links')
       nav_btn.addEventListener('click',function(){
-         nav_links.classList.toggle('active')
+        let current_src =  nav_btn_image.getAttribute('src');
 
-         if(nav_btn.innerHTML == 'show'){
-          nav_btn.innerHTML = 'Hide'
-         }
-         
-         if(nav_btn.innerHTML == 'Hide'){
-          nav_btn.innerHTML = 'show'
-         }
+        if(current_src.includes('menu.png')){
+nav_btn_image.setAttribute('src','../assets/icons/close.png')
+        }
+        else{
+
+nav_btn_image.setAttribute('src','../assets/icons/menu.png')
+        }
+         nav_links.classList.toggle('active')     
       })
 
 
