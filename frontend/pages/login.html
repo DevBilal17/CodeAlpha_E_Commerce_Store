@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-E-Store</title>
+    <link rel="stylesheet" href="../css/nav_footer.css" />
+    <link rel="stylesheet" href="../css/resgister.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="n">
+          <div class="nav-btn">
+            <button><img src="../assets/icons/menu.png" alt="" /></button>
+          </div>
+          <div class="nav-logo">
+            <h3>E-Store</h3>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="./index.html">Home</a></li>
+          <li class="nav-link"><a href="#">About</a></li>
+          <li class="nav-link"><a href="#">Contact</a></li>
+          <li class="nav-link"><a href="./register.html">Sign Up</a></li>
+        </ul>
+        <div class="nav-last">
+          <!-- <div class="input">
+            <input type="text" placeholder="What are you looking for?" />
+            <img src="../assets/icons/search-icon.svg" alt="" />
+          </div> -->
+          <div class="nav-icons">
+            <div class="wishlist">
+              <div class="count">1</div>
+              <img src="../assets/icons/heart-icon.svg" alt="" />
+            </div>
+            <div class="cart">
+              <div class="count">3</div>
+              <img src="../assets/icons/cart-icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="register">
+        <div class="left">
+          <img src="../assets/images/signup_img.png" alt="" />
+        </div>
+        <div class="right">
+          <form>
+            <div class="head">
+              <h2>Log in to E-Store</h2>
+              <p>Enter your details below</p>
+            </div>
+            <div class="inputs">
+              <!-- <div class="name">
+                <input type="text" id="name" name="name" />
+                <label for="name">Name</label>
+              </div> -->
+              <div class="email">
+                <input type="email" id="email" name="email" />
+                <label for="email">Email Address</label>
+              </div>
+              <div class="password">
+                <input type="password" id="password" name="password" />
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="login-btn">
+              <button type="submit">Log In</button>
+              <a href="#">Forget Password?</a>
+            </div>
+            
+            <span>Don't have an account? <a href="./register.html">Sign up</a></span>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>
+          <h4>Exclusive</h4>
+          <h5>Subscribe</h5>
+          <p>Get 10% off your first order</p>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button>
+              <img src="../assets/icons/icon-send-white.png" alt="" />
+            </button>
+          </form>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li>exclusive@gmail.com</li>
+            <li>+9239120309382109091</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <ul>
+            <li><a href="">My Account</a></li>
+            <li><a href="">Login / Register</a></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">Wishlist</a></li>
+            <li><a href="">Shop</a></li>
+            <!-- <li></li> -->
+          </ul>
+        </div>
+        <div>
+          <h4>Quick Link</h4>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms Of Use</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="div"></div>
+      <div class="copyright">
+        &copy; All copyrights are reserved. Developed by Muhammad Bilal Aqeel
+      </div>
+    </footer>
+
+    <script>
+      var nav_btn = document.querySelector(".nav-btn button");
+      var nav_btn_image = nav_btn.querySelector("img");
+      var nav_links = document.querySelector("nav .nav-links");
+      nav_btn.addEventListener("click", function () {
+        let current_src = nav_btn_image.getAttribute("src");
+
+        if (current_src.includes("menu.png")) {
+          nav_btn_image.setAttribute("src", "../assets/icons/close.png");
+        } else {
+          nav_btn_image.setAttribute("src", "../assets/icons/menu.png");
+        }
+        nav_links.classList.toggle("active");
+      });
+
+      // var input_container = document.querySelector('.inputs>div');
+      // var inputs = input_container.querySelectorAll('input');
+
+      // inputs.forEach((item,index)=>{
+      //   item.addEventListener('focus',function(){
+      //       item.classList.add('active')
+      //   })
+      // })
+      var input_containers = document.querySelectorAll(".inputs > div"); // selects all input wrappers
+      input_containers.forEach((container) => {
+        var input = container.querySelector("input");
+        input.addEventListener("focus", function () {
+          container.classList.add("active");
+        });
+
+        input.addEventListener("blur", function () {
+          if (input.value.trim() == "") {
+            container.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

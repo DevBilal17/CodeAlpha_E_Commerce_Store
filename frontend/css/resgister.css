@@ -104,6 +104,7 @@ main #register .right form .inputs > div.active label {
   outline: none;
   color: #fff;
   border-radius: 4px;
+  cursor: pointer;
 }
 form span {
   font-size: 13px;
@@ -118,6 +119,35 @@ form span a {
 }
 
 
+
+.login-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.login-btn button{
+    height: 40px;
+  background-color: var(--dark-red);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  min-width:120px ;
+    cursor: pointer;
+}
+.login-btn a{
+  font-size: 14px;
+  text-decoration: none;
+  width: fit-content;
+  color: var(--dark-red);
+  transition: all 0.1s ease-in-out;
+}
+.login-btn a:hover{
+  border-bottom: 1px solid var(--dark-red);
+}
 
 @media screen and (max-width:1030px){
    main #register .left{
@@ -151,7 +181,7 @@ form span a {
     height: fit-content;
   }
   main #register .right{
-    padding: 40px 20px;
+    padding: 60px 20px 80px;
   }
   main #register .right form .head h2{
     letter-spacing: 1.4px;
