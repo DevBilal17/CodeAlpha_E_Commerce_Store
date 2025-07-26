@@ -1,41 +1,4 @@
 @media screen and (max-width: 1000px) {
-  nav .nav-links {
-    position: absolute;
-    top: 70px;
-    flex-direction: column;
-    background-color: #fff;
-    width: 50vw;
-    height: 300px;
-    left: -60px;
-    padding: 30px;
-    z-index: 999;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    transition: all 0.2s ease-in-out;
-    transform: translateX(-100%);
-  }
-.nav-btn{
-    display: block;
-}
-.nav-btn button{
-  /* padding: 2px; */
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-.nav-btn img{
-  width: 25px;
-}
-  header .nav-logo h3 {
-  font-size: 25px;
-  margin-left: 5px;
-}
-  nav .nav-links li {
-    width: fit-content;
-  }
-  nav .nav-links.active {
-    transform: translateX(0%);
-  }
 
   /* Banner */
   #banner{
@@ -85,10 +48,7 @@
 
 
 @media screen and (max-width:776px){
-  /* Navbar */
-  header nav{
-    padding: 0 20px;
-  }
+  
 
 
   /* Secttions */
@@ -145,21 +105,8 @@ header marquee{
   .products .product{
   min-width: 200px;
 }
-   header nav{
-    /* padding: 0 10px; */
-  }
-    header .nav-logo h3 {
-      font-size: 20px;
-    }
+   
 
-    nav .nav-last .input{
-      display: none;
-    }
-
-
-.sales-head{
-  /* flex-direction: column; */
-}
 
 
 
@@ -273,7 +220,5 @@ header marquee{
    #new_arrival .grid-container .grid-box .content{
     bottom: 20px;
    }
-   footer .container{
-    padding: 40px 20px;
-   }
+ 
 }

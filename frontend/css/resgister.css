@@ -1,11 +1,11 @@
 main #register {
-  height: 80vh;
+  height: 90vh;
   /* padding: 40px 0; */
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
+  gap: 10px;
 }
 main #register .left {
   width: 60%;
@@ -15,14 +15,16 @@ main #register .left {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 40px;
 }
 main #register .left img {
   /* height: 100%; */
-  width: 60%;
+  width: 90%;
 }
 main #register .right {
-  width: 30%;
+  width: 40%;
   display: flex;
+  padding: 40px;
 }
 
 main #register .right form {
@@ -113,4 +115,55 @@ form span a {
   text-decoration: none;
   border-bottom: 1px solid var(--dark-gray);
   color: var(--dark-gray);
+}
+
+
+
+@media screen and (max-width:1030px){
+   main #register .left{
+    width: 50%;
+   }
+   main #register .left img{
+    width: 100%;
+   }
+   main #register .right{
+    width: 50%;
+   }
+}
+
+@media screen and (max-width:870px){
+    main #register .left{
+      display: none;
+    }
+      main #register{
+        justify-content: center;
+      }
+      main #register .right{
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+      }
+}
+
+@media screen and (max-width:460px){
+  main #register{
+    height: fit-content;
+  }
+  main #register .right{
+    padding: 40px 20px;
+  }
+  main #register .right form .head h2{
+    letter-spacing: 1.4px;
+    font-size: 28px;
+  }
+  main #register .right form .head p{
+    font-size: 14px;
+  }
+  main #register .right form .inputs > div label{
+    font-size: 14px;
+  }
+   main #register .right form .inputs > div input{
+    font-size: 13px;
+   }
 }
