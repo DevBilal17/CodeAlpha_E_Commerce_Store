@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup-E-Store</title>
-    <link rel="stylesheet" href="../css/nav_footer.css">
-    <link rel="stylesheet" href="../css/resgister.css">
+    <link rel="stylesheet" href="../css/nav_footer.css" />
+    <link rel="stylesheet" href="../css/resgister.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
@@ -45,39 +45,37 @@
     </header>
 
     <main>
-        <section id="register">
-         <div class="left">
-            <img src="../assets/images/signup_img.png" alt="">
-         </div>
-         <div class="right">
-            <form>
-                <div class="head">
-                    <h2>Create an account</h2>
-                    <p>Enter your details below</p>
-                </div>
-                <div class="inputs">
-                    <div class="name">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-                    <div class="email">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="password">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                </div>
-                <div class="submit_btn">
-                    <button type="submit">
-                        Create Account
-                    </button>
-                </div>
-                <span>Already have an account? <a href="#">Log in</a></span>
-            </form>
-         </div>
-        </section>
+      <section id="register">
+        <div class="left">
+          <img src="../assets/images/signup_img.png" alt="" />
+        </div>
+        <div class="right">
+          <form>
+            <div class="head">
+              <h2>Create an account</h2>
+              <p>Enter your details below</p>
+            </div>
+            <div class="inputs">
+              <div class="name">
+                <input type="text" id="name" name="name" />
+                <label for="name">Name</label>
+              </div>
+              <div class="email">
+                <input type="email" id="email" name="email" />
+                <label for="email">Email Address</label>
+              </div>
+              <div class="password">
+                <input type="password" id="password" name="password" />
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="submit_btn">
+              <button type="submit">Create Account</button>
+            </div>
+            <span>Already have an account? <a href="#">Log in</a></span>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -136,18 +134,27 @@
         nav_links.classList.toggle("active");
       });
 
+      // var input_container = document.querySelector('.inputs>div');
+      // var inputs = input_container.querySelectorAll('input');
 
+      // inputs.forEach((item,index)=>{
+      //   item.addEventListener('focus',function(){
+      //       item.classList.add('active')
+      //   })
+      // })
+      var input_containers = document.querySelectorAll(".inputs > div"); // selects all input wrappers
+      input_containers.forEach((container) => {
+        var input = container.querySelector("input");
+        input.addEventListener("focus", function () {
+          container.classList.add("active");
+        });
 
-
-
-      var input_container = document.querySelector('.inputs>div');
-      var inputs = input_container.querySelectorAll('input');
-      
-      inputs.forEach((item,index)=>{
-        item.addEventListener('click',function(){
-            item.classList.add('active')
-        })
-      })
+        input.addEventListener("blur", function () {
+          if (input.value.trim() == "") {
+            container.classList.remove("active");
+          }
+        });
+      });
     </script>
   </body>
 </html>

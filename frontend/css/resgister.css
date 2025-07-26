@@ -1,4 +1,3 @@
-
 main #register {
   height: 80vh;
   /* padding: 40px 0; */
@@ -61,18 +60,19 @@ main #register .right form .inputs > div {
   display: flex;
   transition: all 0.2s linear;
 }
-main #register .right form .inputs > div{
-    cursor: text;
+main #register .right form .inputs > div {
+  cursor: text;
 }
 main #register .right form .inputs > div label {
   position: absolute;
-  color: var(--dark-gray);
-  bottom: 5px;
+  left: 0;
+  top: 14px; /* position it inside input initially */
   font-size: 16px;
-  opacity: 0.9;
-  /* top: 0; */
-  transition: all 0.2s linear;
-  z-index: -1;
+  color: var(--dark-gray);
+  opacity: 0.8;
+  transition: 0.3s ease all;
+  pointer-events: none;
+  z-index: 1;
 }
 main #register .right form .inputs > div input {
   background-color: transparent;
@@ -81,34 +81,36 @@ main #register .right form .inputs > div input {
   width: 100%;
   padding: 20px 0 0 0;
   outline: none;
+  transition: all 0.2s linear;
 }
 
 main #register .right form .inputs > div.active label {
-  top: -4px !important;
+  top: -4px;
+  transition: all 0.2s linear;
   /* bottom: none; */
 }
 
-.submit_btn{
-    margin-top: 10px;
-    width: 100%;
+.submit_btn {
+  margin-top: 10px;
+  width: 100%;
 }
-.submit_btn button{
-    width: 100%;
-    height: 40px;
-    background-color: var(--dark-red);
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 4px;
+.submit_btn button {
+  width: 100%;
+  height: 40px;
+  background-color: var(--dark-red);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
 }
-form span{
-    font-size: 13px;
-    color: var(--dark-gray);
+form span {
+  font-size: 13px;
+  color: var(--dark-gray);
 }
 
-form span a{
-    margin-left: 5px;
-    text-decoration: none;
-    border-bottom: 1px solid var(--dark-gray);
-    color: var(--dark-gray);
+form span a {
+  margin-left: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--dark-gray);
+  color: var(--dark-gray);
 }
