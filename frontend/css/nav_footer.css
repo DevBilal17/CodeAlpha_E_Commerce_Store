@@ -176,7 +176,30 @@ footer .container > div:nth-child(1) p {
   margin-top: 12px;
   font-size: 12px;
 }
-
+footer .container > div:nth-child(1) form{
+  border: 1px solid #fff;
+  margin-top: 10px;
+  display: flex;
+  padding: 10px 7px;
+  min-width: 200px;
+  align-items: center;
+  gap: 3px;
+  border-radius: 4px;
+}
+footer .container > div:nth-child(1) form button{
+  outline: none;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container > div:nth-child(1) form input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
 footer .container > div:not(:nth-child(1)) h4 {
   font-size: 17px;
   font-weight: 500;
