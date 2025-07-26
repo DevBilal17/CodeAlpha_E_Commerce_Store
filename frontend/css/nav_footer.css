@@ -199,6 +199,7 @@ footer .container > div:nth-child(1) form input{
   border: none;
   outline: none;
   width: 100%;
+  color: #fff;
 }
 footer .container > div:not(:nth-child(1)) h4 {
   font-size: 17px;
