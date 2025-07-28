@@ -41,6 +41,7 @@ header nav {
 }
 .nav-btn {
   display: none;
+  cursor: pointer;
 }
 header .nav-logo h3 {
   font-size: 25px;
@@ -271,6 +272,7 @@ footer .copyright {
   }
   .nav-btn img {
     width: 25px;
+    cursor: pointer;
   }
   header .nav-logo h3 {
     font-size: 25px;
